@@ -3,13 +3,14 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 10s linear;
-  height: 40vmin;
+  display: flex;
+  animation: App-logo-spin infinite 60s linear;
+  height: 10vh;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
