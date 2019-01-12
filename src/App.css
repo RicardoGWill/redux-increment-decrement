@@ -1,20 +1,58 @@
+.Button {
+  padding: 1vh 1vh;
+  margin: 0.5vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Heading-Top {
+  padding: 2vh;
+  font-size: 2vh;
+  font-weight: bold;
+  color: #999;
+}
+
+.Heading-Bottom {
+  padding-bottom: 1vh;
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.Flex-Vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Flex-Horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
+  padding-top: 2vh;
   display: flex;
-  animation: App-logo-spin infinite 60s linear;
   height: 10vh;
+  animation: App-logo-spin infinite 60s linear;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }

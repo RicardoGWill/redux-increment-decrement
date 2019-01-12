@@ -10,16 +10,22 @@ const Counter = (props) => {
   console.log('render', props)
   return (
     <div>
-
-      <h1>Click the buttons to Increment, Decrement, and Reset.</h1>
-      <h2>Count: {props.count}</h2>
-      {/* Increment button*/}
-      <button onClick={props.onIncrementClick}>Increment</button>
-      {/* Decrement button*/}
-      <button onClick={props.onDecrementClick}>Decrement</button>
-      {/* Reset Count button*/}
-      <button onClick={props.onResetClick}>Reset Count</button>
-
+      <div className="Flex-Vertical">
+        <div className="Heading-Top">
+          Click the buttons to Increment, Decrement, and Reset the count.
+        </div>
+        <div className="Heading-Bottom">
+          Count: {props.count}
+        </div>
+        <div className="Flex-Horizontal">
+          {/* Increment button*/}
+          <button className="Button" onClick={props.onIncrementClick}>Increment</button>
+          {/* Decrement button*/}
+          <button className="Button" onClick={props.onDecrementClick}>Decrement</button>
+        </div>
+        {/* Reset Count button*/}
+        <button className="Button" onClick={props.onResetClick}>Reset Count</button>
+      </div>
     </div>
   );
 };
@@ -38,7 +44,7 @@ const mapDispatchToProps = (dispatch) => {
 
     // This is the method used to increment the number.
     onIncrementClick: () => {
-      console.log('click');
+      console.log('Increment click');
       // Note: In Redux, actions are objects that have a property called "type".
       // They can have other properties as well.  Below is an action.
       const action = {
@@ -50,25 +56,19 @@ const mapDispatchToProps = (dispatch) => {
 
     // This is the method used to decrement the number.
     onDecrementClick: () => {
-      console.log('click');
-      // Note: In Redux, actions are objects that have a property called "type".
-      // They can have other properties as well.  Below is an action.
+      console.log('Decrement click');
       const action = {
         type: 'DECREMENT'
       };
-      // Actions must be "dispatched", as shown below.
       dispatch(action);
     },
 
     // This is the method used to decrement the number.
     onResetClick: () => {
-      console.log('click');
-      // Note: In Redux, actions are objects that have a property called "type".
-      // They can have other properties as well.  Below is an action.
+      console.log('Reset click');
       const action = {
         type: 'RESET'
       };
-      // Actions must be "dispatched", as shown below.
       dispatch(action);
     }
 
