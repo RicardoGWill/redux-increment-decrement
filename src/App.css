@@ -4,7 +4,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.6vh;
   font-weight: bold;
 }
 
@@ -43,7 +43,6 @@
   padding-top: 2vh;
   display: flex;
   height: 10vh;
-  animation: App-logo-spin infinite 60s linear;
 }
 
 .App-header {
